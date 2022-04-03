@@ -1,7 +1,8 @@
 import React from "react";
 
-function ChoixVote({ choix, post, results }) {
-  const conteur = 0;
+function ChoixVote({ choix, results }) {
+ let conteur = 0;
+
   return (
     <div className="scroll">
       <div className="choix">
@@ -9,9 +10,14 @@ function ChoixVote({ choix, post, results }) {
         <input type="text" className="value" value={choix.choix} readOnly />
       </div>
 
-        
+        {results.map((result)=>{
+          if (result.id_choix == choix.id_choix) {
+                conteur ++;
+               
+          }
+        })}
 
-      <p className="resulta1">+1</p>
+      <p className="resulta1">{ "+"+conteur}</p>
     </div>
   );
 }
