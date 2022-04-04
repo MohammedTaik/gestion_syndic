@@ -1,0 +1,134 @@
+.modalBackground{
+    background-color: rgba(0, 0, 0, 0.479);
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    margin: top 500px;
+    position: absolute;
+  }
+  
+  .Cree h1{
+    text-align: center;
+    top:20px;
+    position: relative;
+    color: #ffffff;
+    text-shadow: 3px 2px 10px #000000;
+    font-family: Hatton;
+  }
+  .modalContainer{
+    width: 700px;
+    height: 400px;
+    background-color:#16221f;
+    margin: 0 auto;
+    margin-top:180px;
+    border-radius: 40px;
+    box-shadow: 3px 2px 10px #000000;
+  }
+    /*pour vote*/
+  .Titre{
+    width: 100px;
+    background-color: rgba(46, 54, 44, 0.479);    font-size:29px;
+    margin-left: 70px;
+    margin-top: 72px;
+    position: absolute;
+    color: #ffffff;
+    text-align: center;
+    border-radius :3px;
+  }
+  .inputTitre{
+    margin-top: 60px;
+    width: 300px;
+    height: 60px;
+    margin-left:200px;
+    border-radius : 30px;
+    padding-left: 25px;
+    font-size:18px;
+    outline: none;
+  }
+  .Choix{
+    width: 100px;
+    background-color: rgba(46, 54, 44, 0.479);
+    font-size:29px;
+    margin-left: 70px;
+    margin-top: 60px;
+    position: absolute;
+    color: #ffffff;
+    text-align: center;
+    border-radius :3px;
+
+  }
+  .inputChoix{
+    margin-top: 100px;
+    width: 300px;
+    height: 60px;
+    margin-top: 50px;
+    margin-left: 200px;
+    border-radius : 30px;
+    padding-left: 25px;
+    font-size:18px;
+    outline: none;
+  
+  }
+  .btn-Creer{
+    position: relative;
+    margin-top:50px;
+    margin-left:280px;
+    cursor: pointer;
+    width:150px;
+    height: 50px;
+    border-radius : 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size:18px;
+    font-family: Hatton;
+    box-shadow: 3px 2px 10px #000000;
+  }
+  .btn-ajoute-choix{
+    position: relative;
+    cursor: pointer;
+    width:120px;
+    height: 40px;
+    border-radius : 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size:18px;
+    font-family: Hatton;
+    box-shadow: 3px 2px 10px #000000;
+    left: 5%;
+  }
+  /*pour Statut*/
+  .modalContainer2{ 
+    width: 700px;
+    height: 300px;
+    background-color:#16221f;
+    margin: 0 auto;
+    margin-top:210px;
+    border-radius: 40px;
+    box-shadow: 3px 2px 10px #000000;
+  }
+  .btn-Creer2{
+    position: relative;
+    cursor: pointer;
+    width:150px;
+    height: 50px;
+    border-radius : 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size:18px;
+    font-family: Hatton;
+    box-shadow: 3px 2px 10px #000000;
+    top: 80px;
+    left: 12px;
+  }
+  /*pour Categorie*/
+  .Titre2{
+    width: 120px;
+    background-color: rgba(46, 54, 44, 0.479);    font-size:29px;
+    margin-left: 70px;
+    margin-top: 75px;
+    position: absolute;
+    color: #ffffff;
+    text-align: center;
+    border-radius :3px;
+  }
+

@@ -1,18 +1,27 @@
-import React from 'react'
-import './ModalVote.css'
-function ModalVote() {
+import React from "react";
+import "./Modal.css";
+function ModalVote({ setopen }) {
   return (
-    <div className="modalBackground">
-      <div className="modalContainer">
-          <h1>Creer un vote</h1>
-          <label className="labell"> Titre :</label>
-          <input type="text" className="inputText"/><br/>
-          <label className="labell"> Titre :</label>
-          <input type="text" className="inputText"/><br/>
-          <button className='validi'>Validi</button>
+    <>
+      <div class="modalBackground" onClick={() => setopen(false)}>
+        <div className="modalContainer">
+          <div className="Cree">
+            <h1>Creer un Vote</h1>
+          </div>
+          <label className="Titre">Titre</label>
+          <input type="text" class="inputTitre" />
+          <br />
+          <label className="Choix">Choix</label>
+          <input type="text" class="inputChoix" />
+          <button className="btn-ajoute-choix">Ajoute Choix</button>
+          <br />
+          <button className="btn-Creer" onClick={() => setopen(false)}>
+            Creer
+          </button>
+        </div>
       </div>
-    </div>
-  )
+    </>
+  );
 }
 
-export default ModalVote ;
+export default ModalVote;

@@ -4,7 +4,6 @@
   box-sizing: border-box;
   
 }
-
 .Header {
   background-color: #16221f;
   height: 75px;
@@ -83,7 +82,7 @@
   width: 124px;
   height: 44px;
   border-radius: 35px;
-  border-color: #ff0000;
+  border-color: #16221f;
   text-align: center;
   box-shadow: inset;
   font-size: 18px;
@@ -152,7 +151,9 @@
   margin-left: 1210px;
   border-radius: 10px;
   text-align: center;
-  cursor: pointer
+  cursor: pointer;
+  
+  z-index: 20;
 }
 #logoVote {
   width: 30px;
@@ -237,7 +238,6 @@
   margin-left: 50px;
   padding-top: 18px;
 }
-
 
 #borderVote {
   height: 120px;

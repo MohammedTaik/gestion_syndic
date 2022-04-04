@@ -47,6 +47,36 @@ function App() {
      {id_vote:3 , id_partisipant:null ,id_choix:2},
   ])
 
+  const [Categories] = useState([
+    {
+      id_Categorie: 1,categorie: "categ1",
+    },
+    {
+      id_Categorie: 2,categorie: "categ2",
+    },
+    {
+      id_Categorie: 3,categorie: "categ3",
+    },
+    {
+      id_Categorie: 4,categorie: "categ4",
+    },
+  ]);
+
+  const [Statuts, setStatut] = useState([
+    {
+      id_Statut: 1,Statut: "stat1",
+    },
+    {
+      id_Statut: 2,Statut: "stat2",
+    },
+    {
+      id_Statut: 3,Statut: "stat3",
+    },
+    {
+      id_Statut: 4,Statut: "stat4",
+    },
+  ]);
+
   posts.sort(function (a, b) {
     var dateA = new Date(a.date),
       dateB = new Date(b.date);
@@ -57,9 +87,9 @@ function App() {
     <>
       <Header />
       <SideBare />
-      <Categorie />
+      <Categorie Categories={Categories}/>
       <Fichier />
-      <Statut />
+      <Statut Statuts={Statuts}/>
       <Vote />
       
       <div className="postes">

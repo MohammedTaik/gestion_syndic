@@ -1,16 +1,21 @@
-import React from 'react';
-function Categorie(){
-    return<>
-      <form >
-            <select aria-label="State" className="combo">
-                <option value="Select">Select....</option>
-                <option value="java">Java</option>
-                <option value="html">HTML</option>
-                <option value="C++">C++</option>
-                <option value="sap">SAP</option>
-                </select>
-                <img src="../image/plus.png" alt="" className="plus"/>
-        </form>
-    </>;
+import React , { useState } from "react";
+import ModalCategorie from "./Modal/ModalCategorie"
+
+function Categorie({ Categories }) {
+  const [isopen, setopen] = useState(false);
+  return (
+    <>
+      <form>
+        <select aria-label="State" className="combo">
+          <option value="Select">Select....</option>
+          {Categories.map((Categorie) => {
+            return <option>{Categorie.categorie}</option>;
+          })}
+        </select>
+        <img src="../image/plus.png" alt="" className="plus" onClick={() => setopen(true)}/>
+      </form>
+      {isopen ? <ModalCategorie setopen={setopen}/> : null}
+    </>
+  );
 }
-export default Categorie ;
+export default Categorie;
