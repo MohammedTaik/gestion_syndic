@@ -1,17 +1,24 @@
 import React from 'react'
 
-function ModalCategorie({setopen}) {
+function ModalCategorie({setopen ,onChange, onClick}) {
     
+  function onClickSave(e) {
+    setopen(false);
+  }
+
   return (
     <>
-    <div class="modalBackground" onClick={() => setopen(false)}>
+    <div class="modalBackground" >
       <div className="modalContainer2">
         <div className="Cree">
           <h1>Ajouter un Categorie</h1>
         </div>
         <label className="Titre2">Categorie</label>
-        <input type="text" class="inputTitre" />
-        <button className="btn-Creer2" onClick={() => setopen(false)}> 
+        <input type="text" class="inputTitre" onChange={onChange}/>
+        <button className="btn-Creer2"  onClick={() => {
+              onClickSave();
+              onClick();
+            }}> 
           Creer
         </button>
       </div>

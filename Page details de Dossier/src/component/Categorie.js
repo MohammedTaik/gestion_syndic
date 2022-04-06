@@ -1,7 +1,7 @@
 import React , { useState } from "react";
 import ModalCategorie from "./Modal/ModalCategorie"
 
-function Categorie({ Categories }) {
+function Categorie({ Categories ,onChange , onClick}) {
   const [isopen, setopen] = useState(false);
   return (
     <>
@@ -14,7 +14,7 @@ function Categorie({ Categories }) {
         </select>
         <img src="../image/plus.png" alt="" className="plus" onClick={() => setopen(true)}/>
       </form>
-      {isopen ? <ModalCategorie setopen={setopen}/> : null}
+      {isopen ? <ModalCategorie setopen={setopen} onChange={onChange} onClick={onClick}/> : null}
     </>
   );
 }

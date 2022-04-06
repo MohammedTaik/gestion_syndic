@@ -1,6 +1,6 @@
 import React , { useState } from "react";
 import ModalStatut from "./Modal/ModalStatut"
-function Statut({ Statuts }) {
+function Statut({ Statuts , onChange ,onClick ,onChangeStatut }) {
 
   const [isopen, setopen] = useState(false);
 
@@ -13,7 +13,7 @@ function Statut({ Statuts }) {
           <option value="Select">Select....</option>
           
           {Statuts.map((st) => {
-            return <option value={st.Statut}>{st.Statut}</option>;
+            return <option value={st.Statut}>{st.Statut} </option>;
           })}
         </select>
         <img
@@ -24,7 +24,7 @@ function Statut({ Statuts }) {
           onClick={() => setopen(true)}
         />
       </form>
-      {isopen ? <ModalStatut setopen={setopen} /> : null}
+      {isopen ? <ModalStatut setopen={setopen} onChange={onChange} onClick={onClick}/> : null}
       <div id="title">
         <p>Augmentation des frais de syndic</p>
       </div>

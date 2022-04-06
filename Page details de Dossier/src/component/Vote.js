@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ModalVote from "./Modal/Modal";
-function Vote() {
-  const [isopen, setopen] = useState(false);
+function Vote({nouveauChoix  ,onChange , onClick ,onSupprime ,onCreer}) {
+  const [isopen, setopen ] = useState(false);
 
   return (
     <>
@@ -14,7 +14,7 @@ function Vote() {
             onClick={() => setopen(true)}
           />
         </div>
-        {isopen ? <ModalVote setopen={setopen} /> : null}
+        {isopen ?   <ModalVote setopen={setopen} nouveauChoix={nouveauChoix} onChange={onChange} onClick={onClick} onSupprime={onSupprime} onCreer={onCreer}/>  : null}
       </div>
     </>
   );

@@ -11,6 +11,37 @@ import PosteList from "./PosteList";
 
 
 function App() {
+  
+  const [Folders, setFolders] = useState([
+    {
+      id_folder: 1,
+      titre: "folder1",
+      categorie: "categ1",
+      statut: "st1",
+      description: "hada howa l folder 1",
+    },
+    {
+      id_folder: 2,
+      titre: "folder2",
+      categorie: "categ1",
+      statut: "st2",
+      description: "hada howa l folder 2",
+    },
+    {
+      id_folder: 3,
+      titre: "folder3",
+      categorie: "categ2",
+      statut: "st2",
+      description: "hada howa l folder 3",
+    },
+    {
+      id_folder: 4,
+      titre: "aaaaa",
+      categorie: "categ2",
+      statut: "st2",
+      description: "hada howa l folder 4",
+    },
+  ]);
 
   const [input,setInput] = useState("");
   
@@ -47,7 +78,7 @@ function App() {
      {id_vote:3 , id_partisipant:null ,id_choix:2},
   ])
 
-  const [Categories] = useState([
+  const [Categories ,setCategories] = useState([
     {
       id_Categorie: 1,categorie: "categ1",
     },
@@ -76,32 +107,109 @@ function App() {
       id_Statut: 4,Statut: "stat4",
     },
   ]);
+   
+  const [statut, setStatu] = useState({
+    id_Categorie: null,
+    categorie: "",
+  })
+  const [currentCategorie, setCurrentCategorie] = useState({
+    id_Statut: null,
+    Statut: "",
+  })
 
+  const [currentChoix , setcurrentChoix]=useState({
+    id_choix:null,choix:"",id_vote:null
+  })
+
+  const [nouveauChoix,setNouveauChoix] = useState([
+   
+  ])  
+   
   posts.sort(function (a, b) {
     var dateA = new Date(a.date),
       dateB = new Date(b.date);
     return dateA - dateB;
   });
 
+   function handleChangeStatut(e){ 
+    e.preventDefault();
+    setStatu({...statut,Statut:e.target.value})
+  
+   }
+
+   function handeCreateStatut(e){
+ 
+    setStatut([...Statuts,statut])
+   
+   }
+   
+   function handleChangeCategorie(e){ 
+    setCurrentCategorie({...currentCategorie,categorie:e.target.value})
+    
+   }
+
+   function handeCreateCategorie(e){
+    setCategories([...Categories,currentCategorie])
+   }
+   
+   function changeCreerChoix(e){
+    setcurrentChoix({...currentChoix , choix:e.target.value ,id_vote:5,id_choix:nouveauChoix.length})
+   }
+   
+   function ClickCreerChoix(){
+    setNouveauChoix([...nouveauChoix,currentChoix])
+  
+   }
+
+   function handlSupprChoix(choix){
+    setNouveauChoix(nouveauChoix.filter(choi => choi.choix != choix.choix)) 
+   }
+   
+   function handleCreerVote(){
+      {nouveauChoix.map(function(n){
+        setChoix([...choix,n])
+        console.log(n)
+      })}
+      setposts([...posts,{id:posts.length+1,title:"hhhh",id_vote:5,id_dossier:7,date:555,Type:"vote"}])
+   }
+
   return (
     <>
       <Header />
+
       <SideBare />
-      <Categorie Categories={Categories}/>
+
+      <Categorie Categories={Categories}
+                 onChange={handleChangeCategorie}
+                 onClick={handeCreateCategorie}
+                 />
+
       <Fichier />
-      <Statut Statuts={Statuts}/>
-      <Vote />
+
+      <Statut Statuts={Statuts} 
+              onChange={handleChangeStatut}
+              onClick={handeCreateStatut} 
+              />
+            
+      <Vote nouveauChoix={nouveauChoix}
+            onChange={changeCreerChoix}
+            onClick={ClickCreerChoix}
+            onSupprime={handlSupprChoix}
+            onCreer={handleCreerVote}
+      />
       
       <div className="postes">
         <PosteList posts={posts} setposts={setposts}
                    choix={choix} setChoix={setChoix}
                    results={results}
+
         />
       </div>
       <CreePost  input={input}
          setInput={setInput}
          posts={posts}
          setposts={setposts}
+
          />
     </>
   );
