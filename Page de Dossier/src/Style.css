@@ -1,0 +1,575 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.Header {
+  background-color: #16221F;
+  height: 10%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+
+
+}
+
+.logo {
+  display: flex;
+  position: absolute;
+}
+
+.logo img {
+  width: 70px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+#logo-name {
+  color: white;
+  font-size: 50px;
+  margin-left: 8px;
+  margin-top: 5px;
+}
+
+
+.User img {
+  position: absolute;
+  width: 50px;
+  margin-top: 10px;
+  left: 95%;
+}
+
+.User h2 {
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  left: 89%;
+  margin-top: 5px;
+}
+
+.User h3 {
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  left: 82%;
+  margin-top: 40px;
+}
+
+.side-bar {
+  background-color: #16221F;
+  position: absolute;
+  color: #000000;
+  width: 13%;
+  height: 100%;
+  text-align: center;
+  z-index: 0;
+}
+
+.side-bar #Dossier {
+  align-items: center;
+  height: 37px;
+  width: 178px;
+  background-color: #0e1d19;
+  margin-top: 350px;
+  position: absolute;
+  color: white;
+}
+
+.side-bar p {
+  font-size: 20px;
+  margin-top: 7px;
+}
+
+.side-bar #Dossier:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.Dossier-Creator {
+  position: fixed;
+  color: #000000;
+  margin-left: 14%;
+}
+
+.Dossier-Creator p:nth-child(1) {
+  position: absolute;
+  margin-top: 80px;
+  font-size: 42px;
+  width: 300px;
+}
+
+.Button-CD {
+  margin-top: 80px;
+  padding: 10px;
+  display: flex;
+  position: absolute;
+  left: 970px;
+  width: 190px;
+  border-style: solid;
+  border-color: #000000 2px;
+  border-radius: 4px;
+
+}
+
+.Button-CD img {
+  width: 40px;
+}
+
+.Button-CD p {
+  position: absolute;
+  margin-left: 44px;
+  margin-top: 9px;
+  font-size: 18px;
+  width: 150px;
+  font-weight: bold;
+}
+
+.Button-CD:hover {
+  position: absolute;
+  cursor: pointer;
+
+}
+
+.filter{
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  margin-top: 160px;
+  margin-left: 313px;
+  width:68% ;
+  border-radius: 6px;
+  height: 50px;
+  border-style: solid;
+  border-color: black 1px;
+}
+
+
+
+.filter input {
+  position: absolute;
+  height: 44px;
+  width: 52%;
+  border-top: none;
+  border: none;
+  outline: none;
+  background: rgba(255, 253, 253, 0.8);
+  padding-left: 50px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+
+.filter i{
+  position: absolute;
+  font-size: 33px;
+  margin-top: 5px;
+  margin-left: 10px;
+  color: #000000;
+  z-index: 99;
+}
+
+
+
+.combo-statut {
+  font-weight: bold;
+  position: absolute;
+  width: 220px;
+  height: 44px;
+  border-top: none;
+  border-bottom: none;
+  text-align: center;
+  box-shadow: inset;
+  font-size: 18px;
+  padding: 10px;
+  margin-left: 482px;
+  outline: none;
+  margin-top: 0px;
+}
+
+.combo-Categorie {
+  font-weight: bold;
+  outline: none;
+  position: absolute;
+  width: 220px;
+  height: 44px;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  text-align: center;
+  box-shadow: inset;
+  font-size: 18px;
+  padding: 10px;
+  margin-left: 702px;
+}
+
+
+.postes {
+  position: absolute;
+  width: 950px;
+  height: 430px;
+  box-shadow: 3px 2px 10px rgb(0, 0, 0,0.5);
+  margin-left: 300px;
+  margin-top: 230px;
+  border-radius: 10px;
+  overflow-y: scroll;
+
+}
+
+
+.note {
+  position: relative;
+  width: 850px;
+  height: 100px;
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-left: 50px;
+  box-shadow: 3px 2px 10px rgb(0, 0, 0,0.5);;
+}
+.note #statut{
+  position: absolute;
+  width: 70px;
+  height: 25px;
+  margin-top: 40px;
+  margin-left: 770px;
+  border-style: solid;
+  border-color: #05EF00;
+  border-radius: 50px;
+  text-align: center;
+
+}
+
+
+.dossier-image{
+  position: absolute;
+  background-color: #f66060;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+   top:20px;
+   left: 10px;
+}
+.note p{
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 33px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+.modalBackground{
+  background-color: rgba(0, 0, 0, 0.479);
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  margin: top 500px;
+  position: absolute;
+}
+
+.Cree h1{
+  text-align: center;
+  top:20px;
+  position: relative;
+  color: #ffffff;
+  text-shadow: 3px 2px 10px #000000;
+  font-family: Hatton;
+}
+.modalContainer{
+  width: 700px;
+  height: 600px;
+  background-color:#16221f;
+  margin: 0 auto;
+  margin-top:50px;
+  border-radius: 40px;
+  box-shadow: 3px 2px 10px #000000;
+}
+.Titre{
+  width: 100px;
+  background-color: rgba(0, 0, 0, 0.479);
+  font-size:29px;
+  margin-left: 310px;
+  margin-top: 50px;
+  position: absolute;
+  color: #ffffff;
+  text-align: center;
+}
+.inputTitre{
+  margin-top: 100px;
+  width: 300px;
+  height: 60px;
+  margin-left:200px;
+  border-radius : 9px;
+  padding-left: 15px;
+  font-size:18px;
+  outline: none;
+}
+.Description{
+  width: 150px;
+  background-color: rgba(0, 0, 0, 0.479);
+  font-size:29px;
+  margin-left: 280px;
+  margin-top: 50px;
+  position: absolute;
+  color: #ffffff;
+  text-align: center;
+}
+.inputDescription{
+  margin-top: 100px;
+  width: 81%;
+  height: 140px;
+  margin-top: 15%;
+  margin-left:8%;
+  border-radius : 9px;
+  padding-left: 15px;
+  font-size:18px;
+  outline: none;
+
+}
+.btn-Creer{
+  position: relative;
+  margin-top:50px;
+  margin-left:280px;
+  cursor: pointer;
+  width:150px;
+  height: 50px;
+  border-radius : 9px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-size:18px;
+  font-family: Hatton;
+  box-shadow: 3px 2px 10px #000000;
+}
+/*-----combo Statut-------------*/
+.formStatut{
+  position: absolute;
+  top: 70px;
+  left: -20px;
+}
+.combo {
+  position: absolute;
+  width: 124px;
+  height: 44px;
+  border-radius: 35px;
+  border-color: #16221f;
+  text-align: center;
+  box-shadow: inset;
+  font-size: 18px;
+  margin-left: 190px;
+  
+  outline: none;
+  cursor: pointer
+}
+.plus {
+  position: absolute;
+  margin-left: 321px;
+  margin-top:5px;
+}
+#comboCategorie {
+  margin-left: 370px;
+  cursor: pointer
+}
+#ajouteStatut {
+  margin-left: 501px;
+  cursor: pointer
+}
+#title {
+  position: absolute;
+  width: 450px;
+  height: 50px;
+  margin-top: 100px;
+ 
+  margin-left: 610px;
+  border-radius: 10px;
+  text-align: center;
+}
+#title p {
+  width: auto;
+  position: absolute;
+  margin-top: 13px;
+  font-size: 25px;
+  font-family: Hatton;
+  margin-left: 41px;
+}
+/*---------------------------------*/
+/*--------Modal Statut-----------*/
+.StatutBackground {
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+.TitreStatut{
+  width: 100px;
+  background-color: rgba(0, 0, 0, 0.479);
+  font-size:23px;
+  margin-left: 110px;
+  margin-top: 28px;
+  position: absolute;
+  color: #ffffff;
+  text-align: center;
+}
+.CreeStatut h1{
+  font-size: 25px;
+  text-align: center;
+  top:15px;
+  position: relative;
+  color: #ffffff;
+  text-shadow: 3px 2px 10px #000000;
+  font-family: Hatton;
+}
+
+.inputStatut{
+  position: absolute;
+  margin-top: 65px;
+  width: 260px;
+  height: 40px;
+  margin-left:25px;
+  border-radius : 9px;
+  padding-left: 15px;
+  font-size:18px;
+  outline: none;
+}
+.btn-CreerStatut{
+  margin-top:115px;
+  margin-left:80px;
+  cursor: pointer;
+  width:150px;
+  height: 30px;
+  border-radius : 9px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  outline: none;
+  border: none;
+  font-size:18px;
+  font-family: Hatton;
+  box-shadow: 3px 2px 10px #000000;
+}
+.StatutContainer{
+  width: 310px;
+  height:190px;
+  background-color:#16221f;
+  margin-top:0px;
+  border-radius: 40px;
+  box-shadow: 3px 2px 10px #000000;
+  margin-left: 30px;
+}
+/*------------------ --------------*/
+/*-----combo Category-------------*/
+.formCategory{
+  position: absolute;
+  top: 130px;
+  left: -20px;
+}
+.combo {
+  position: absolute;
+  width: 124px;
+  height: 44px;
+  border-radius: 35px;
+  border-color: #16221f;
+  text-align: center;
+  box-shadow: inset;
+  font-size: 18px;
+  margin-left: 190px;
+  
+  outline: none;
+  cursor: pointer
+}
+.plus {
+  position: absolute;
+  margin-left: 321px;
+  margin-top:5px;
+}
+#comboCategorie {
+  margin-left: 370px;
+  cursor: pointer
+}
+#ajouteCategorie {
+  margin-left: 501px;
+  cursor: pointer
+}
+#title {
+  position: absolute;
+  width: 450px;
+  height: 50px;
+  margin-top: 100px;
+ 
+  margin-left: 610px;
+  border-radius: 10px;
+  text-align: center;
+}
+#title p {
+  width: auto;
+  position: absolute;
+  margin-top: 13px;
+  font-size: 25px;
+  font-family: Hatton;
+  margin-left: 41px;
+}
+/*---------------------------------*/
+/*--------Modal Category-----------*/
+.CategoryBackground {
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+.TitreCategory{
+  width: 100px;
+  background-color: rgba(0, 0, 0, 0.479);
+  font-size:23px;
+  margin-left: 110px;
+  margin-top: 28px;
+  position: absolute;
+  color: #ffffff;
+  text-align: center;
+}
+.CreeCategory h1{
+  font-size: 25px;
+  text-align: center;
+  top:15px;
+  position: relative;
+  color: #ffffff;
+  text-shadow: 3px 2px 10px #000000;
+  font-family: Hatton;
+}
+
+.inputCategory{
+  position: absolute;
+  margin-top: 65px;
+  width: 260px;
+  height: 40px;
+  margin-left:25px;
+  border-radius : 9px;
+  padding-left: 15px;
+  font-size:18px;
+  outline: none;
+}
+.btn-CreerCategory{
+  margin-top:115px;
+  margin-left:80px;
+  cursor: pointer;
+  width:150px;
+  height: 30px;
+  border-radius : 9px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  outline: none;
+  border: none;
+  font-size:18px;
+  font-family: Hatton;
+  box-shadow: 3px 2px 10px #000000;
+}
+.CategoryContainer{
+  width: 310px;
+  height:190px;
+  background-color:#16221f;
+  margin-top:150px;
+  border-radius: 40px;
+  box-shadow: 3px 2px 10px #000000;
+  margin-left: 30px;
+}
+/*------------------ --------------*/
