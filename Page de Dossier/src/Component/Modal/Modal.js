@@ -1,5 +1,4 @@
 import React from "react";
-import "./Modal.css";
 function ModalVote({ setopen ,nouveauChoix ,onChange ,onClick ,onSupprime ,onCreer}) {
  
 

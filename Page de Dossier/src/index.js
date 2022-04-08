@@ -1,12 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import DossierApp from './Component/DossierApp'
-import './Style.css'
 
-
+import AppGestionDeSyndic from './AppGestionDeSyndic'
 ReactDOM.render(
   <React.StrictMode>
-    <DossierApp/>
+    <AppGestionDeSyndic/>
   </React.StrictMode>,
   document.getElementById('root')
 );

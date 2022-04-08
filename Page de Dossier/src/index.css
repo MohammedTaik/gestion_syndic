@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+.combo {
+  position: absolute;
+  width: 124px;
+  height: 44px;
+  border-radius: 35px;
+  border-color: #16221f;
+  text-align: center;
+  box-shadow: inset;
+  font-size: 18px;
+  margin-left: 190px;
+  margin-top: 100px;
+  outline: none;
+  cursor: pointer
+}
+.plus {
+  position: absolute;
+  margin-top: 110px;
+  margin-left: 321px;
+  cursor: pointer
+}
+#comboCategorie {
+  margin-left: 370px;
+  cursor: pointer
+}
+#ajouteCategorie {
+  margin-left: 501px;
+  cursor: pointer
+}
+#title {
+  position: absolute;
+  width: 450px;
+  height: 50px;
+  margin-top: 100px;
+ 
+  margin-left: 610px;
+  border-radius: 10px;
+  text-align: center;
+}
+#title p {
+  width: auto;
+  position: absolute;
+  margin-top: 13px;
+  font-size: 25px;
+  font-family: Hatton;
+  margin-left: 41px;
+}
+#Fichie {
+  position: absolute;
+  width: 45px;
+  height: 40px;
+  margin-top: 100px;
+  box-shadow: 3px 2px 10px #000000;
+  margin-left: 1300px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer
+}
+#logoFichie {
+  width: 30px;
+  margin-top: 5px;
+  cursor: pointer
+}
+
+#vote {
+  position: absolute;
+  width: 45px;
+  height: auto;
+  margin-top: 100px;
+  box-shadow: 3px 2px 10px #000000;
+  margin-left: 1210px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  
+  z-index: 20;
+}
+#logoVote {
+  width: 30px;
+  margin-top: 5px;
+  cursor: pointer
+}
+
+.postessimo {
+  position: absolute;
+  width: 950px;
+  height: 500px;
+  margin-left: 340px;
+  margin-top: 170px;
+  border-radius: 10px;
+  overflow-y: scroll;
+  border-style: outset;
+
+}
+
+.creeNote {
+  position: absolute;
+  background-color: #ffffff;
+  z-index: 100;
+  width: 800px;
+  height: 50px;
+  margin-top: 700px;
+  margin-left: 380px;
+  border-radius: 19px;
+  outline: none;
+  border: #ffffff;
+  box-shadow: 3px 2px 10px -2px #000000;
+  border: 1px solid lightblue;
+  padding: 10px 40px;
+  font-size: 17px;
+  
+}
+
+#afficheNote {
+  position: absolute;
+  width: 60px;
+  height: 50px;
+  margin-top: 701px;
+  box-shadow: 3px 2px 10px #000000;
+  margin-left: 1200px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #16221f;
+  cursor: pointer
+}
+
+::placeholder {
+  color: rgb(55, 55, 58);
+  font-size: 16px;
+  padding: 20px;
+}
+
+#logoAffiche {
+  width: 30px;
+  height: 20px;
+  margin-top: 9px;
+}
+
+.note {
+  width: 700px;
+  height:auto;
+  border-radius: 6px;
+  margin: auto;
+  border-color: #000000;
+   margin-top:30px ;
+}
+
+.areaBorder {
+  width: 600px;
+  height:auto;
+  top: 5px;
+  position: relative;
+  border-radius: 10px;
+  font-family: Hatton, sans-serif;
+  border-color: #16221f;
+  text-align: center;
+  font-size: 20px;
+  margin-left: 50px;
+  padding-top: 18px;
+}
+
+#borderVote {
+  height: 120px;
+}
+
+.dateNote {
+  width: 200px;
+  height: 30px;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 3px;
+  text-align: center;
+  padding: 5px;
+  color: #ffffff;
+  background-color: #1d312c;
+  position: relative;
+}
+.vote {
+  width: 700px;
+  height:auto;
+  border-radius: 6px;
+  margin: auto;
+  margin-top:30px;
+  margin-bottom:20px; 
+}
+.posteChadow {
+  
+  width: 600px;
+  height:auto;
+  top: 5px;
+  position: relative;
+  border-radius: 10px;
+  font-family: Hatton, sans-serif;
+  border-color: #16221f;
+  text-align: center;
+  font-size: 20px;
+  margin-left: 50px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.titleVote {
+  width: 250px;
+  height: 35px;
+  border-radius: 20px;
+  margin: auto;
+  text-align: center;
+  padding: 4px;
+  font-size: 18px;
+  color: #16221f;
+  background-color: #ffffff;
+  border-style: solid;
+  border-color: #16221f 1px solid;
+}
+.choix {
+  width: 90%;
+  height: 50px;
+  font-size: 18px;
+  color: aliceblue;
+  float: left;
+  border-style: outset;
+  border-color: #000000 1px;
+}
+.resulta1 {
+  width: 50px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #16221f;
+  font-size: 18px;
+  color: aliceblue;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+  margin-left :535px;
+  top :9px;
+  padding-top:5px;
+}
+.voting {
+  width: 100%;
+  border-style: solid;
+}
+.value {
+  color: #000000;
+  position: relative;
+  height: 30px;
+  top: 2px;
+  width:90%;
+  font-size :15px;
+  border: #ffffff;
+
+}
+.value:focus{
+  outline: none;
+}
+.scroll {
+  margin-top:5px;
+  height: 60px;
+  width: 590px;
+}
+.check{
+  position: relative;
+height: 25px;
+width:50px;
+right:3px;
+border-style: solid;
+top: 10px;
+cursor: pointer
+}
+.fichier {
+  height: 132px;
+  width: 160px;
+  margin-left: 20px;
+  border-radius: 20px;
+  box-shadow: 3px 2px 10px #000000;
+  position: relative;
+  bottom: 5px;
+
+}
+
+.voteshadow{
+  box-shadow: 3px 2px 10px #000000;
+  width: 600px;
+  height:auto;
+  top: 5px;
+  position: relative;
+  border-radius: 10px;
+  font-family: Hatton, sans-serif;
+  border-color: #16221f;
+  text-align: center;
+  font-size: 20px;
+  margin-left: 50px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}

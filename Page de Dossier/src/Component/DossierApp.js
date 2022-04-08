@@ -4,6 +4,7 @@ import SideBar from "./SideBar";
 import DossierCreator from "./DossierCreator";
 import DossierFilter from "./DossierFilter";
 import DossierList from "./DossierList";
+import '../Style.css'
 export default function DossierApp() {
   /*Use States*/
   const [Folders, setFolders] = useState([
